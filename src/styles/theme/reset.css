@@ -116,12 +116,12 @@ body {
   color: #000; }
 
 a {
-  color: #409EFF;
+  color: #3598db;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #66b1ff; }
+    color: #5dade2; }
   a:active {
-    color: #3a8ee6; }
+    color: #3089c5; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #5a5e66;

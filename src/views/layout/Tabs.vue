@@ -17,17 +17,17 @@ export default {
   },
   methods: {
     closeViewTabs(view, $event) {
-      this.$store.dispatch('delVisitedViews', view).then((views) => {
+      this.$store.dispatch("delVisitedViews", view).then(views => {
         if (this.isActive(view.path)) {
-          const latestView = views.slice(-1)[0]
+          const latestView = views.slice(-1)[0];
           if (latestView) {
-            this.$router.push(latestView.path)
+            this.$router.push(latestView.path);
           } else {
-            this.$router.push('/')
+            this.$router.push("/");
           }
         }
-      })
-      $event.preventDefault()
+      });
+      $event.preventDefault();
     },
     generateRoute() {
       if (this.$route.matched[this.$route.matched.length - 1].name) {
@@ -37,12 +37,12 @@ export default {
       return this.$route.matched[0];
     },
     addViewTabs() {
-      if(this.generateRoute().path==='/dashboard/index') return
-         this.$store.dispatch("addVisitedViews", this.generateRoute());
+      if (this.generateRoute().path === "/dashboard/index") return;
+      this.$store.dispatch("addVisitedViews", this.generateRoute());
     },
     isActive(path) {
-      if(path==='/dashboard')  path= '/dashboard/index'
-      return path === this.$route.path
+      if (path === "/dashboard") path = "/dashboard/index";
+      return path === this.$route.path;
     }
   },
   watch: {
@@ -53,9 +53,25 @@ export default {
 };
 </script>
 <style lang="less">
-.tabs-view{display: block;border-bottom:1px solid #dfe2e5;padding:0 10px;
-  .tab-span{padding:8px 10px;display: inline-block;margin:5px  10px 0 0;color: #000000;border-top-left-radius: 4px;text-align: center;border-top-right-radius: 4px;min-width: 60px;
-  &.primary{border: 1px solid #dfe2e5;border-bottom: 0;color:#3598db!important;}}
+@import "~styles/variables.less";
+.tabs-view {
+  display: block;
+  border-bottom: 1px solid @borderColor;
+  padding: 0 10px;
+  .tab-span {
+    padding: 8px 10px;
+    display: inline-block;
+    margin: 5px 10px 0 0;
+    color: @blackColor;
+    border-top-left-radius: 4px;
+    text-align: center;
+    border-top-right-radius: 4px;
+    min-width: 60px;
+    &.primary {
+      border: 1px solid @borderColor;
+      border-bottom: 0;
+      color: @primaryColor!important;
+    }
+  }
 }
-
 </style>

@@ -9,9 +9,9 @@
 </template>
 
 <script>
-import { Top, SideBar,AppMain } from "./index";
+import { Top, SideBar, AppMain } from "./index";
 export default {
-  components: { Top, SideBar,AppMain },
+  components: { Top, SideBar, AppMain },
   computed: {
     key() {
       return this.$route.name !== undefined

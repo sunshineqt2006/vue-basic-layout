@@ -238,7 +238,7 @@
   bottom: 0;
   left: 0;
   height: 2px;
-  background-color: #409EFF;
+  background-color: #3598db;
   z-index: 1;
   -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: -webkit-transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -264,7 +264,7 @@
     -webkit-transform: scale(0.8, 0.8);
     transform: scale(0.8, 0.8); }
   .el-tabs__new-tab:hover {
-    color: #409EFF; }
+    color: #3598db; }
 
 .el-tabs__nav-wrap {
   overflow: hidden;
@@ -338,9 +338,9 @@
       background-color: #b4bccc;
       color: #fff; }
   .el-tabs__item.is-active {
-    color: #409EFF; }
+    color: #3598db; }
   .el-tabs__item:hover {
-    color: #409EFF;
+    color: #3598db;
     cursor: pointer; }
   .el-tabs__item.is-disabled {
     color: #b4bccc;
@@ -417,12 +417,12 @@
     margin: -1px -1px 0;
     color: #878d99; }
     .el-tabs--border-card > .el-tabs__header .el-tabs__item.is-active {
-      color: #409EFF;
+      color: #3598db;
       background-color: #fff;
       border-right-color: #d8dce5;
       border-left-color: #d8dce5; }
     .el-tabs--border-card > .el-tabs__header .el-tabs__item:hover {
-      color: #409EFF; }
+      color: #3598db; }
 
 .el-tabs--top:not(.el-tabs--border-card):not(.el-tabs--card) .el-tabs__item:nth-child(2), .el-tabs--bottom:not(.el-tabs--border-card):not(.el-tabs--card) .el-tabs__item:nth-child(2) {
   padding-left: 0; }

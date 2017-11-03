@@ -30,27 +30,20 @@
   </el-menu>
 </template>
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters } from "vuex";
 export default {
   computed: {
-    ...mapGetters([
-      'routers',
-      'sidebar'
-    ]),
+    ...mapGetters(["routers", "sidebar"]),
     isCollapse() {
-      return !this.sidebar.opened
+      return !this.sidebar.opened;
     }
   },
-  methods: {
-    
-  }
-
+  methods: {}
 };
 </script>
 <style lang="less">
-
-  .el-menu-vertical-demo:not(.el-menu--collapse) {
-    width: 200px;
-  }
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+  width: 200px;
+}
 </style>
 

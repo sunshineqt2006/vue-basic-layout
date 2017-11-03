@@ -42,8 +42,8 @@ export default {
 .login{background: linear-gradient(#e2f3fc -30%, #f8fcff )}
 .head {
   height: 70px;
-  background: #3598db;
-  color: #ffffff;
+  background: @primaryColor;
+  color: @whiteColor;
   display: flex;
   justify-content: space-between;
   align-items: center;

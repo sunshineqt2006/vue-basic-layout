@@ -35,13 +35,15 @@
   }
 </script>
 <style lang="less">
-.el-dropdown-link{color:#ffffff;display: flex;align-items: center;
-img.advert{width: 35px;height: 35px;border-radius: 50%;margin: 0px 10px 0;border:2px solid #ffffff;background: #ffffff; }}
+@import '~styles/variables';
+
+.el-dropdown-link{color:@whiteColor;display: flex;align-items: center;
+img.advert{width: 35px;height: 35px;border-radius: 50%;margin: 0px 10px 0;border:2px solid @whiteColor;background: @whiteColor; }}
 
 .head {
   height: 70px;
-  background: #3598db;
-  color: #ffffff;
+  background: @primaryColor;
+  color: @whiteColor;
   display: flex;
   justify-content: space-between;
   align-items: center;

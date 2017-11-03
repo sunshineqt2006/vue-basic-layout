@@ -5,17 +5,21 @@
   </div>
 </template>
 <script>
-import Tabs from './Tabs'
+import Tabs from "./Tabs";
 export default {
-  name: 'AppMain',
-  components:{Tabs},
+  name: "AppMain",
+  components: { Tabs },
   computed: {
     key() {
-      return this.$route.name !== undefined ? this.$route.name + +new Date() : this.$route + +new Date()
+      return this.$route.name !== undefined
+        ? this.$route.name + +new Date()
+        : this.$route + +new Date();
     }
   }
-}
+};
 </script>
 <style lang="less">
-.main-sty{flex:1;}
+.main-sty {
+  flex: 1;
+}
 </style>
